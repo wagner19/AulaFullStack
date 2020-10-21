@@ -1,0 +1,40 @@
+form{
+	margin: 0 auto;
+	width: 40%;
+	padding: 20px;
+	border:1px solid;
+	border-radius: 10px;
+}
+
+form div{
+	margin-top: 10px;
+}
+
+label{
+	display: inline-block;
+	width: 100%;
+}
+
+select, input, textarea{
+	width: 70%;
+	font: 14px sans-serif;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+select:focus, input:focus, textarea:focus{
+	border-color: #000;
+}
+
+form button{
+	padding: 15px;
+	background-color: blue;
+	color: #fff;
+	border:0;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+form button{
+	background-color: darkblue;
+}

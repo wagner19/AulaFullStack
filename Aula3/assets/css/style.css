@@ -1,0 +1,86 @@
+
+#fieldset1 div{
+	width: 100px;
+	height: 100px;
+	float: left;
+	margin-right: 15px; 
+}
+#fieldset1{
+	padding-bottom: 50px;
+	margin-bottom: 50px;
+}
+
+
+.bd{
+
+	width: 400px;
+	height: 400px;
+	background: linear-gradient(red,yellow);
+}
+
+.bd{
+
+	width: 400px;
+	height: 400px;
+	background: linear-gradient(to right, red,yellow);
+}
+
+.bd{
+
+	width: 400px;
+	height: 400px;
+	background: linear-gradient(to bottom, red,yellow);
+}
+
+.bd{
+
+	width: 400px;
+	height: 400px;
+	background: linear-gradient(to bottom right, red,yellow);
+}
+
+#titulo1{
+	text-shadow: 2px 2px 2px
+}
+
+#titulo2{
+	font-size: 50px;
+	color: #033d3f;
+	text-shadow: 0 0 7
+}
+
+.scroll1{
+	width: 100px;
+	height: 100px;
+	background-color: #00FFFF;
+	overflow: scroll;
+}
+
+.scroll2{
+	width: 100px;
+	height: 100px;
+	background-color: #00FFFF;
+	overflow: scroll;
+}
+
+.box1, .box2{
+	width: 200px;
+	height: 200px;
+	border: 1px absolute;
+}
+
+.fieldset2{
+	height: 2000px;
+}
+
+.box1{
+	z-index: 10;
+	position: absolute;
+	background-color: green;
+}
+
+.box2{
+	margin:10px;
+	background-color: red;
+	position: fixed;
+}

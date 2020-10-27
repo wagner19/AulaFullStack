@@ -15,5 +15,11 @@ class SiteController extends Controller
 		$this->view('site/home/index.php');
 
 	}
+	public function index()
+	{		
+
+		$this->view('site/conta/index.php');
+
+	}
 
 }

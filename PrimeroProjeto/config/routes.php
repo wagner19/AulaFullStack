@@ -10,12 +10,19 @@
 
 // rotas normais
 $commonRoutes = array(
-	'/'   		=> 'SiteController/index',
-	'contato'  	=> 'SiteController/contato',
+	'/'   		=> 'HomeController/index',
+	'contato'  	=> 'ContatoController/index',
+	'registro'  => 'RegistroController/index',
+	'login'		=> 'LoginController/index',
+
 );
 
 // rotas POST
-$commonPost = array();
+$commonPost = array(
+	'enviar/contato' 	=> "ContatoSubmit/enviar",
+	'enviar/usuario' 	=> "RegistroSubmit/enviar",
+	'verificar/email'	=> "LoginController/verificarEmail",
+);
 
 $commonRoutes = array_merge($commonRoutes, $commonPost);
 

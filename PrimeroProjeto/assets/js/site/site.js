@@ -15,6 +15,30 @@
 	function enviarContato(){
 		
 		var form = $("form#form-contato").serialize();
+
+		$.ajax({
+			url: "enviar/contato",
+			type: 'POST',
+			dataType: "json",
+			// data: {
+			// 	nome: $('#form-contato #nome').val(),
+			// 	fone: $('#form-contato #fone').val(),
+			// 	email: $('#form-contato #email').val(),
+			// 	mensagem:  $('#form-contato #mensagem').val(),
+			// }
+			data: form
+		}).done(function(retorno){
+			swal("Mensagem", retorno.msg, retorno.status);
+			// if(retorno.resultado == true){
+			// 	swal("Mensagem", retorno.msg, "success");
+			// }else{
+			// 	swal("Aviso", "Erro ao enviar contato.", "error");
+			// }
+
+		}).fail(function(jqXHR, textStatus, msg){
+			alert(msg);
+		})
+
 		// Passar formulário para php usando ajax
 	}
 
@@ -42,6 +66,36 @@
 		return true;
 	}
 
+	function enviarUsuario(){
+
+		var form = $("form#form-usuario").serialize();
+
+		$.ajax({
+			url: "enviar/usuario",
+			type: 'POST',
+			dataType: "json",
+			data: form
+		}).done(function(retorno){
+			swal({
+			  title: "Mensagem",
+			  text: retorno.msg,
+			  icon:  retorno.status,
+			  buttons: false,
+			  timer: 2000,
+			}).then((value) => {
+
+				if(retorno.status){
+
+					window.location = URL + "/login";
+
+				}
+				
+			});
+		}).fail(function(jqXHR, textStatus, msg){
+			alert(msg);
+		})
+	}
+
 	function clicks(){
 
 		$("#btn-enviar-contato").click(function() {
@@ -50,10 +104,15 @@
 		 	}
 		});
 
+		$("#btn-enviar-usuario").click(function() {
+			enviarUsuario();
+		});
+
 	}
 
 	function masks(){
 		$('#form-contato #fone').mask('(99) 99999-9999');
+		$('#form-contato #cpf').mask('999.999.999-99');
 	}
 
 	$(document).ready(function() {

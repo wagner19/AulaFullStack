@@ -1,0 +1,36 @@
+body{
+	background-color: powderblue;
+}
+
+h1{
+	color: blue;
+	font-family: courier;
+	font-size: 300%;
+}
+
+p{
+	font-family: "comic sans ms";
+	font-size: 50px;
+	/*border-style: dotted dashed solid double;
+	border-color: rgb(45, 50, 20, 0.5);*/
+	border-left: 12px dashed #000000;
+	border-bottom: 1px dotted blue;
+	border-top: 10px double rgb(19, 148, 166);
+	border-right: none;
+	padding-right: 60px;
+	padding-left: 60px;
+	padding-bottom: 5%;
+	padding-top: 10vh;
+	margin-left: 30px;
+	margin-top: 15%;
+	margin-right: 19vh;
+	margin-bottom: 50px;
+}
+
+#vermelho{
+	color: red;
+}
+
+.verde{
+	color: green;
+}

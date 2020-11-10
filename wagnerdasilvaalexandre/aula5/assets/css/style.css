@@ -1,0 +1,13 @@
+body{
+	margin: 0;
+}
+
+.background{
+	width: 100%;
+	min-height: 1080px;
+	background-image: url(../img/608.png);
+	background-position: 100px 100px;
+	background-repeat: no-repeat,repeat;
+	background-attachment: fixed;
+	background-size: auto;
+}

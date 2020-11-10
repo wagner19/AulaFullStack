@@ -1,0 +1,24 @@
+body{
+	margin: 0;
+}
+
+.quadrado{
+	width: 300px;
+	height: 300px;
+	background: red;
+	background: -webkit-linear-gradient(left top, red, green, yellow);
+	background: -o-linear-gradient(right bottom, red, green, yellow);
+	background: -moz-linear-gradient(right bottom, red, green, yellow);
+	background: linear-gradient(-300deg, red, green, yellow);
+}
+
+.redondo {
+	width: 300px;
+	height: 300px;
+	background: red;
+	background: -webkit-radial-gradient( red, green, yellow);
+	background: -o-radial-gradient( red, green, yellow);
+	background: -moz-radial-gradient( red, green, yellow);
+	background: radial-gradient( red, green, yellow);
+
+}

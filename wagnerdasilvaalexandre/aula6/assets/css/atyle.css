@@ -1,0 +1,50 @@
+body {
+	margin: 0;
+}
+
+div {
+	width: 100px;
+	height: 100px;
+	background: red;
+	-webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+	-webkit-transition-delay: 1s;
+	transition: width 2s, height 2s, transform 2s;
+	transition-delay: 1s;
+
+}
+
+#div1{-webkit-transition-timing-function: linear;}
+#div2{-webkit-transition-timing-function: ease;}
+#div3{-webkit-transition-timing-function: ease-in;}
+#div4{-webkit-transition-timing-function: ease-out;}
+#div5{-webkit-transition-timing-function: ease-in-out;}
+
+#div1{transition-timing-function: linear;}
+#div2{transition-timing-function: ease;}
+#div3{transition-timing-function: ease-in;}
+#div4{transition-timing-function: ease-out;}
+#div5{transition-timing-function: ease-in-out;}
+
+#animada {
+	-webkit-animation-name: bell;
+	-webkit-animation-duration: 4s;
+	animation-name: bell;
+	animation-duration: 4s;
+}
+
+div:hover{
+	width: 300px;
+	height: 300px;
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+@-webkit-keyframes bell {
+	from {background-color: red;}
+	to {background-color: yellow;}
+}
+
+@keyframes bell {
+	from {background-color: red;}
+	to{background-color: yellow;}
+}

@@ -1,5 +1,5 @@
 <script
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANkkbicY6l7AvWVl370rhhbN0eKWobQMs&callback=initMap&libraries=&v=weekly"
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCf-AiM7eRuoA927pvgKMb7Y4zm7PyAx40&callback=initMap&libraries=&v=weekly"
   defer
 ></script>
 

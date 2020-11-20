@@ -21,13 +21,16 @@ $paths = array(
   'controllers/site/home',
   'controllers/site/registro',
   'controllers/site/login',
+  'controllers/sistema/dashboard',
+  'controllers/sistema/tarefas',
   'helpers',
   'models',
   'models/db',
   'models/user',
   'models/contato',
   'models/registro',
-  'models/login'
+  'models/login',
+  'models/tarefas', 
 );
 
 /**

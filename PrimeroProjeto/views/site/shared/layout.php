@@ -1,6 +1,5 @@
 <?php $url      = $this->helpers['URLHelper']->getURL(); ?>
 <?php $location = $this->helpers['URLHelper']->getLocationAdmin(); ?>
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -33,10 +32,10 @@
           <div class="row">
             <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 mb-5 mb-md-0 mb-lg-0 mb-xl-0">
               <h5>Menu</h5>
-              <a class="nav-link <?php echo $location == '' || $location == '/' ? 'active' : '' ?>" href="<?php echo $url; ?>/">Home</a>
-              <a class="nav-link <?php echo $location == 'registro' ? 'active' : '' ?>" href="<?php echo $url; ?>/registro">Registro</a>
-              <a class="nav-link <?php echo $location == 'contato' ? 'active' : '' ?>" href="<?php echo $url; ?>/contato">Contato</a>
-              <a class="nav-link <?php echo $location == 'login' ? 'active' : '' ?>" href="<?php echo $url; ?>/login">Login</a>
+              <a href="page2.php">Home</a>
+              <a href="page2.php">Registro</a>
+              <a href="page2.php">Contato</a>
+              <a href="page2.php">Login</a>
             </div>
             <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 mb-5 mb-md-0 mb-lg-0 mb-xl-0">
               <h5>Informações</h5>
@@ -44,6 +43,8 @@
               <p>Lages - SC</p>
 
             </div>
+
+            
             <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
               <h5>Redes Sociais</h5>
               <div class="row">
@@ -67,7 +68,7 @@
     </div>
 
     <script type="text/javascript">
-        var URL = "<?php echo $url ?>";
+      var URL = "<?php echo $url ?>";
     </script>
     <script type="text/javascript" src="<?php echo $url; ?>/assets/libs/jquery/jquery-3.5.1.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
@@ -75,5 +76,6 @@
     <script type="text/javascript" src="<?php echo $url; ?>/assets/libs/bootstrap/bootstrap.min.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script type="text/javascript" src="<?php echo $url; ?>/assets/js/site/site.js"></script>
+    <script type="text/javascript" src="<?php echo $url; ?>/assets/js/site/login.js"></script>
   </body>
 </html>

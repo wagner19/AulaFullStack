@@ -3,7 +3,7 @@
  *
  * Modelo de dados dos contatos.
  *
- * @author Wagner 
+ * @author Wagner da Silva Alexandre
  *
  **/
 class ContatoData

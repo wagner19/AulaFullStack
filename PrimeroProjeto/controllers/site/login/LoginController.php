@@ -18,6 +18,15 @@ class LoginController extends Controller
 
 	}
 
+	public function sair()
+	{	
+		$this->helpers['UserSession']->deleteUser();
+
+		$this->setLayout('site/shared/layout.php');
+		$this->view('site/login/index.php');
+
+	}
+
 	public function verificarEmail()
 	{
 
@@ -27,18 +36,19 @@ class LoginController extends Controller
 		$resultado 		= $verificarEmail->verificar($email);
 
 		echo json_encode(array(
-			'resultado' => $resultado
+			'resultado' => $resultado,
 		));
 	}
 
 	public function verificarPassword()
 	{
 
-		$email = $_POST['email'];
-		$email = $_POST['email'];
+		$email 		= $_POST['email'];
+		$password 	= $_POST['password'];
 
-		// Chamada da classe e método na model de verificação de senha;
-
+		$verificarPassword  = new VerificarPassword;
+		$resultado 			= $verificarPassword->verificar($email, $password);
+		
 		echo json_encode(array(
 			'resultado' => $resultado
 		));
